@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+.AboutSection {
+    width: 100%;
+    height: 92vh;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about_wrapper {
+    background: rgba( 16, 0, 0, 0.15 );
+    max-width: 90%;
+    height: 80vh;
+    background: white;
+    border-radius: 0.5rem;
+    display: flex;
+    background: rgba( 255, 255, 255, 0.25 );
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    // backdrop-filter: blur( 5.5px );
+    // -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.contact_form {
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.contact_form>input {
+    color: white;
+    height: 1rem;
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 1rem;
+    border: 2px solid #00FFA2;
+    outline: none;
+    transition: 0.2s;
+    background: rgba( 16, 0, 0, 0.15 );
+// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+// backdrop-filter: blur( 1px );
+// -webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.contact_form>input::placeholder{
+    color:rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.contact_form>input:focus {
+    width: 60%;
+    border: 2px solid #00d9ff;
+    border-radius: 0.5rem;
+}
+
+.message_holder {
+    margin: 5px;
+    padding: 5px;
+    height: 1rem;
+    width: 50%;
+    border: 2px solid #00FFA2;
+    border-radius: 1rem;
+    transition: 0.2s;
+    outline: none;
+    background: rgba( 16, 0, 0, 0.15 );
+// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+// backdrop-filter: blur( 5px );
+// -webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+}
+
+.message_holder::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.message_holder:focus {
+    border: 2px solid #00d9ff;
+    height: 8rem;
+    width: 60%;
+    border-radius: 0.5rem;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 5px;
+    padding: 2rem;
+    .textLinks{
+
+        font-size:medium;
+        font-family: 'Nunito', sans-serif;
+        color: #000000;
+        font-size: 1rem;
+    }
+}
+
+.btnWrapper>button{
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: #00FFA2;
+    color: #222222;
+    text-shadow: #222222;
+    transition: 0.2s;
+    border-radius: 0.5rem;
+    width: 8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+@media only screen and (max-width: 768px) {
+    .about_wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: fit-content;
+    }
+    .about_me {
+        width: 100%;
+        padding: 5px;
+    }
+    .textLinks{
+        margin: 10px;
+        padding: 10px;
+    }
+    .contact_form {
+        width: 100%;
+        margin: 10px;
+    }
+    .message_holder,
+    .contact_form>input {
+        width: 80%;
+        border-radius: 0.3rem;
+    }
+    .message_holder:focus,
+    .contact_form>input:focus {
+        width: 90%;
+    }
+
+    .btnWrapper{
+        display: block;
+    }
+
+    .about_me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+
+        .textLinks{
+            font-size:  0.8rem;
+        }
+    }
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width:1080px) {
+    .about_wrapper {
+        height: fit-content;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .about_me {
+        width: 100%;
+        padding: 5px;
+        .textLinks{
+            font-size:  1rem;
+        }
+        
+    }
+    .contact_form {
+        width: 100%;
+        margin: 10px;
+    }
+    .message_holder,
+    .contact_form>input {
+        width: 80%;
+        border-radius: 0.3rem;
+    }
+    .message_holder:focus,
+    .contact_form>input:focus {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-device-width: 1080px) {
+    .about_wrapper {
+        height: 80vh;
+    }
+    .about_me {
+        width: 100%;
+        padding: 5px;
+        .textLinks{
+            font: size 0.8em;
+        }
+    }
+    .contact_form {
+        width: 100%;
+        margin: 10px;
+    }
+    .message_holder,
+    .contact_form>input {
+        width: 80%;
+        border-radius: 0.3rem;
+    }
+    .message_holder:focus,
+    .contact_form>input:focus {
+        width: 90%;
+    }
+}
+
+.socialLinks{
+    display: flex;
+    li{
+        list-style: none;
+      margin-left:10px;
+    }
+}
+
+.github{
+    display: flex;
+    background: #fffefe;
+   height:4.5rem;
+   width:4.5rem;
+   border-radius:1rem;
+   justify-content:center;
+   align-items:center;
+
+   a{
+    padding: 2px;
+    margin:2px;
+   }
+}
+
+.twitter{
+    a{
+        img{
+            width:4.5rem;
+            height:4.5rem;
+        }
+    }
+}
+
+.mylinks{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+}

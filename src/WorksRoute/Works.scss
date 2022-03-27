@@ -1,0 +1,113 @@
+.carousel{
+    display: flex;
+    justify-content:center;
+    max-width: 90%;
+}
+
+.react-reveal{
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.carousel .thumbs-wrapper{
+    visibility: collapse;
+    height:0;
+    width:0;
+}
+
+.carousel-root{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top:0;
+    transform: translateY(-1rem)
+
+}
+
+.carousel .slide{
+    max-height:90vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 90%;
+
+
+}
+
+.carousel .slide img{
+    max-height: 100%;
+    width: auto;
+    
+}
+
+.image{
+    margin: 0 auto;
+    height:100%;
+    width: auto;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:1080px){
+    .carousel-root{
+        
+        height: 42vh;
+    
+    }
+    
+    .carousel .slide{
+        max-height:40vh;
+    }
+    
+}
+@media only screen and (max-width: 900px) and (min-width: 768px){
+    .carousel-root{
+        
+        height: 42vh;
+    
+    }
+    
+    .carousel .slide{
+        max-height:40vh;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .carousel-root{
+        
+        height: 45vh;
+    
+    }
+    
+    .carousel .slide{
+        max-height:44vh;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .carousel-root{
+        
+        height: 40vh;
+    
+    }
+    
+    .carousel .slide{
+        max-height:35vh;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .carousel-root{
+        
+        height: 35vh;
+    
+    }
+        
+    .carousel .slide{
+        max-height:27vh;
+    }
+}
+
+
